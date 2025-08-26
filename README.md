@@ -12,8 +12,8 @@ VirtualEndo Converter is a specialized Blender add-on designed for dental profes
 - **Smart Material Assignment**: Applies realistic materials with customizable colors and transparency
 - **Multiple Export Formats**: 
   - USDZ (iOS AR compatible)
-  - GLB (Universal 3D format)
-  - FBX (Autodesk standard)
+  - GLB (cross-platform, incl. ARCore/Unity/Blender)
+  - FBX (DCC/game-engine workflows)
   - STL (3D printing)
 - **Preset Color Schemes**: Clinical, Educational, and Presentation presets
 - **Batch Processing**: Handles multiple files simultaneously
