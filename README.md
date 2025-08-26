@@ -12,16 +12,29 @@ VirtualEndo Converter is a specialized Blender add-on designed for dental profes
 - **Smart Material Assignment**: Applies realistic materials with customizable colors and transparency
 - **Multiple Export Formats**: 
   - USDZ (iOS AR compatible)
-  - GLB (cross-platform, incl. ARCore/Unity/Blender)
-  - FBX (DCC/game-engine workflows)
+  - GLB (Universal 3D format)
+  - FBX (Autodesk standard)
   - STL (3D printing)
 - **Preset Color Schemes**: Clinical, Educational, and Presentation presets
 - **Batch Processing**: Handles multiple files simultaneously
 - **User-Friendly Interface**: Intuitive sidebar panel in Blender's 3D viewport
 
+## ⚠️ **IMPORTANT DISCLAIMER**
+
+**THIS IS NOT A MEDICAL DEVICE**
+
+This software is intended for **educational, research, and presentation purposes only**. It is **NOT** suitable for:
+- Patient diagnosis or treatment planning
+- Clinical decision making
+- Medical or therapeutic use with patient data
+- Any medical procedures or patient care
+
+Users must comply with all applicable medical data protection regulations (HIPAA, GDPR, etc.) when handling patient information.
+
 ## 📋 Requirements
 
 - Blender 3.0 or higher
+- **STL Import/Export add-on must be enabled** in Blender preferences
 - Diagnocat STL files with proper naming convention:
   - `pulp_XX.stl` (pulp files)
   - `tooth_XX.stl` (tooth files)
@@ -29,11 +42,20 @@ VirtualEndo Converter is a specialized Blender add-on designed for dental profes
 
 ## 🚀 Installation
 
+### Prerequisites
+1. **Enable STL Import/Export in Blender**:
+   - Open Blender
+   - Go to `Edit` → `Preferences` → `Add-ons`
+   - Search for "STL" 
+   - Enable "Import-Export: STL format" add-on
+   - Click "Save Preferences"
+
+### Install VirtualEndo Converter
 1. Download the latest `VirtualEndo_Converter.py` file from the [Releases](../../releases) page
-2. Open Blender
-3. Go to `Edit` → `Preferences` → `Add-ons`
-4. Click `Install...` and select the downloaded `.py` file
-5. Enable the add-on by checking the box next to "VirtualEndo Converter"
+2. In Blender, go to `Edit` → `Preferences` → `Add-ons`
+3. Click `Install...` and select the downloaded `.py` file
+4. Enable the add-on by checking the box next to "VirtualEndo Converter"
+5. The add-on will automatically attempt to enable STL support if not already active
 
 ## 📖 Usage
 
@@ -82,6 +104,8 @@ Contributions are welcome! Please feel free to submit issues, feature requests, 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+**DISCLAIMER**: This software is provided "as is" without warranty of any kind. The authors are not liable for any damages or issues arising from the use of this software. This tool is not intended for medical use or patient care.
+
 ## 🙏 Acknowledgments
 
 - Designed for use with Diagnocat STL files
@@ -93,6 +117,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you encounter any issues or have questions:
 - Open an [issue](../../issues) on GitHub
 - Provide sample files and error messages when possible
+
+**Note**: This is community-supported software. For medical or clinical questions, please consult qualified healthcare professionals.
 
 ## 🔄 Version History
 
@@ -106,6 +132,3 @@ If you encounter any issues or have questions:
 - Support for USDZ, GLB, FBX, and STL export formats
 - Automatic material assignment and color presets
 
----
-
-Made with ❤️ for the dental community
